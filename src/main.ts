@@ -6,7 +6,7 @@ import { CustomRpcExceptionFilter } from './common';
 import { envs } from './config';
 
 async function bootstrap() {
-  const logger = new Logger('MainGateway');
+  const logger = new Logger('Gateway');
 
   const app = await NestFactory.create(AppModule);
 
