@@ -9,4 +9,10 @@
 1. Clone the repository
 2. Install the dependencies with `pnpm install`
 3. Create a `.env` from the `.env.template` file
-4. Run the app with `pnpm start:dev`
+4. Run Nats server
+
+```bash
+docker run -d --name nats-server -p 4222:4222 -p 8222:8222 -p 6222:6222 nats:latest
+```
+
+5. Run the app with `pnpm start:dev`
